@@ -1,0 +1,176 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 10%;
+  min-height: 100vh;
+  top: 40px;
+}
+
+.text-content {
+  max-width: 80%;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+h1 span {
+  color: #bd5eff;
+}
+
+.text-content p {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.text-content a {
+  color: #bd5eff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.activities {
+  margin: 25px 0;
+}
+
+.activities li {
+  list-style: none;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.activities li::before {
+  content: " 🔮 ";
+  color: #bd5eff;
+}
+
+.quote {
+  margin-top: 30px;
+  font-style: italic;
+  color: #bdbdbd;
+}
+
+.quote span {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9rem;
+  font-style: normal;
+  color: #bd5eff;
+}
+
+.illustration {
+  max-width: 39%;
+}
+
+.illustration img {
+  width: 80%;
+  margin-left: 65px;
+  margin-top: 60px;
+  box-shadow: 3px solid black;
+}
+
+.icon {
+  padding: 10px 20px;
+  margin: 0;
+  margin-top: 20px;
+}
+.ski {
+  text-align: center;
+  width: 220px;
+  height: 130px;
+  border: 1px solid white;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.ski:hover {
+  transform: scale(1.1) rotate(3deg);
+  box-shadow: 0 8px 20px rgba(189, 94, 255, 0.6);
+}
+
+.skil img {
+  width: 100px;
+  transition: transform 0.4s ease;
+}
+
+.skil img:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+.skil {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .text-content {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .text-content p {
+    font-size: 1.1rem;
+  }
+
+  .activities li {
+    font-size: 1rem;
+  }
+
+  .illustration {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .illustration img {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .skil {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ski {
+    width: 180px;
+    height: 110px;
+  }
+
+  .ski img {
+    width: 80px;
+  }
+}
