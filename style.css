@@ -212,7 +212,7 @@ body {
 
   .logo {
     font-size: 28px;
-    margin-bottom: -30px;
+    margin-bottom: -15px;
   }
 
   .main {
@@ -308,7 +308,7 @@ body {
 }
 
 .burger {
-  display: flex;
+  display: none;
   flex-direction: column;
   cursor: pointer;
   gap: 6px;
