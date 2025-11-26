@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://db.onlinewebfonts.com/c/0c0dd1e3d2eb6c3c20ba22466208c003?family=Soin+Sans+Pro+Roman"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <h2 class="logo"><b>MZH</b></h2>
+
+      <nav class="nav-links">
+        <a href="./index.html">
+          <img class="icon-size" src="./icons8-home-50.png" /> Home
+        </a>
+        <a href="./about.html">
+          <img class="icon-size" src="./icons8-person-50.png" /> About
+        </a>
+        <a href="./project.html">
+          <img class="icon-size" src="./icons8-projects-50.png" /> Projects
+        </a>
+        <a href="./project.html">
+          <img class="icon-size" src="./resume.png" /> Resume
+        </a>
+        <a href="https://github.com/Zhansulu300608?tab=repositories">
+          <button class="hbtn">
+            <img class="star-size" src="./icons8-git-50.png" />
+            <img class="star-size" src="./icons8-star-24.png" />
+          </button>
+        </a>
+      </nav>
+
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+  <style>
+    
+
+    .resume {
+      background: white;
+      width: 100%;
+      max-width: 800px;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      margin: 40px auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .name {
+      font-size: 36px;
+      font-weight: 300;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .name span {
+      font-weight: 700;
+      color: #000;
+    }
+
+    .location {
+      font-size: 14px;
+      color: #888;
+      margin-bottom: 16px;
+    }
+   .download-cv-btn {
+      background-color: #6C47A5; 
+      margin: 0 auto;
+      margin-top: 50px;
+      width: 170px;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background-color 0.2s ease;
+      text-decoration: none;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .download-cv-btn:hover {
+      background-color: #5a398a; 
+    }
+      .download-cv-btn a {
+      display: flex;
+      align-items: center;
+    }
+
+    .download-cv-btn:active {
+      transform: scale(0.98);
+    }
+
+   
+    .download-cv-btn svg {
+      width: 18px;
+      height: 18px;
+      fill: currentColor;
+    }
+    .contacts {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #000;
+      font-weight: 600;
+    }
+
+    .job {
+      margin-bottom: 24px;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+
+    .job-title-group {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .job-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 4px;
+    }
+
+    .job-company {
+      font-size: 19px;
+      font-weight: 600;
+    }
+
+    .job-position {
+      font-size: 14px;
+      color: #666;
+    }
+
+    .job-location {
+      font-size: 14px;
+      color: #ff4d8e;
+      font-weight: 500;
+    }
+
+    .job-date {
+      font-size: 14px;
+      color: #888;
+      white-space: nowrap;
+      margin-left: auto;
+    }
+
+    .job-details {
+      margin-top: 12px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .job-details ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .job-details li {
+      margin-bottom: 6px;
+    }
+
+    @media (max-width: 600px) {
+      .resume {
+        padding: 25px;
+      }
+
+      .name {
+        font-size: 28px;
+      }
+
+      .job-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .job-date {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <a href="./Mukhamedsapa Zhansulu Resumeee.pdf" class="download-cv-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </svg>
+    Download CV
+  </a>
+
+  <div class="resume">
+    <div class="header">
+      <h1 class="name">Mukhamedsapa <span>Zhansulu Ruslankyzy</span></h1>
+      <div class="location">Kazakhstan</div>
+      <div class="contacts">
+        <div class="contact-item">+7 776 624 8255</div>
+        <div class="contact-item">zmuhamedsapa@gmail.com</div>
+        <div class="contact-item">Web Developer Intern</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Objective</h2>
+      <p>Aspiring Web Developer seeking an internship opportunity in a tech company or bank to gain practical experience, enhance programming skills, and contribute to creating modern, user-friendly websites and applications.</p>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-group">
+            <div class="job-title">Zhambyl Innovative Higher College</div>
+            <div class="job-position">Specialization: Web Development (3rd year student)</div>
+          </div>
+          <div class="job-date">2022 – Present</div>
+        </div>
+        <div class="job-details">
+          <p>Relevant Coursework: Frontend Development, UI/UX Design, Web Application Architecture, Database Basics.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Skills</h2>
+      <ul class="job-details">
+        <li><strong>Programming:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Frameworks:</strong> Vue.js (basic), Nuxt 3</li>
+        <li><strong>Design Tools:</strong> Figma, Adobe Photoshop, Adobe Illustrator</li>
+        <li><strong>Version Control:</strong> Git, GitHub</li>
+        <li><strong>Soft Skills:</strong> Responsibility, Teamwork, Communication, Creativity</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Project Experience</h2>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-group">
+            <div class="job-title">Portfolio Website</div>
+            <div class="job-company">Personal Project</div>
+            <div class="job-position">Kazakhstan</div>
+          </div>
+          <div class="job-date">2024</div>
+        </div>
+        <div class="job-details">
+          <ul>
+            <li>Developed a personal portfolio website using HTML, CSS, and JavaScript.</li>
+            <li>Implemented responsive design ensuring usability on all devices.</li>
+            <li>Designed UI in Figma and converted it into a fully functional website.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div class="job-title-group">
+            <div class="job-title">Team Web App Project</div>
+            <div class="job-company">College Project – Zhambyl Innovative Higher College</div>
+            <div class="job-position">Team of 3 developers</div>
+          </div>
+          <div class="job-date">2025</div>
+        </div>
+        <div class="job-details">
+          <ul>
+            <li>Collaborated with a team to create a task management app.</li>
+            <li>Used Vue.js for frontend and integrated Firebase for database storage.</li>
+            <li>Focused on adaptive layout, UX optimization, and teamwork coordination.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Additional Projects</h2>
+      <ul class="job-details">
+        <li><strong>Landing Page Design:</strong> Created modern responsive landing pages for local businesses using Figma and converted them into HTML/CSS layouts.</li>
+        <li><strong>Infographics & Visual Materials:</strong> Designed promotional materials, icons, and banners for social media platforms.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Languages</h2>
+      <ul class="job-details">
+        <li>Kazakh – Native</li>
+        <li>Russian – Fluent</li>
+        <li>English – Fluent</li>
+        <li>Turkish – Basic</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Personal Qualities</h2>
+      <p>Creative, detail-oriented, eager to learn new technologies, able to adapt quickly, and passionate about building user-centered web solutions.</p>
+    </div>
+  </div>
+    <a href="./Mukhamedsapa Zhansulu Resumeee.pdf" class="download-cv-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+    </svg>
+    Download CV
+  </a>
+   <footer class="footer">
+      <h2>Designed and Developed by Zhansulu Mukhamedsapa</h2>
+      <h2>Copyright © 2025 SB</h2>
+    </footer>
+
+</body>
+</html>
